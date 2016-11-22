@@ -1,2 +1,2 @@
-# Hitung Rumus Bangun dan Ruang Android
+# Hitung Rumus Bangun Ruang dan Datar Android
 Android Apps for calculating Bangun Ruang dan Datar
