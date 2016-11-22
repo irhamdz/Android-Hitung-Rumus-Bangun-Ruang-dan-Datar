@@ -1,0 +1,39 @@
+<resources>
+    //lain-lain
+    <string name="app_name">Rumus - Rumus</string>
+    <string name="text_gambar">Gambar</string>
+    <string name="title_activity_pilih_rumus_persegi_panjang">PilihRumusPersegiPanjangActivity
+    </string>
+
+    //perhitungan
+    <string name="hitung_luas">Hitung Luas</string>
+    <string name="hitung_keliling">Hitung Keliling</string>
+    <string name="hitung_volume">Hitung Volume</string>
+    <string name="hasil">Hasil</string>
+    <string name="luas">Luas :</string>
+    <string name="keliling">Keliling :</string>
+    <string name="volume">Volume :</string>
+
+
+    //atribute
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="alas">Alas</string>
+    <string name="jari_jari">Jari - Jari</string>
+    <string name="zero">0</string>
+
+    //bangun datar
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="lingkaran">Lingkaran</string>
+    <string name="segitiga">Segitiga</string>
+
+    //bangun ruang
+    <string name="balok">Balok</string>
+    <string name="bola">Bola</string>
+    <string name="tabung">Tabung</string>
+    <string name="luasKerucut">Kerucut</string>
+    <string name="default_text">Default Text</string>
+    <string name="polymorphism">Polymorphism</string>
+    <string name="garis_lukis">Garis Lukis</string>
+</resources>
