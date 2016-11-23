@@ -36,4 +36,6 @@
     <string name="default_text">Default Text</string>
     <string name="polymorphism">Polymorphism</string>
     <string name="garis_lukis">Garis Lukis</string>
+    <string name="bangun_ruang">Bangun Ruang</string>
+    <string name="bangun_datar">Bangun Datar</string>
 </resources>
