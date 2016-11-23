@@ -4,6 +4,14 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
+    <ImageView
+        android:id="@+id/gambar_app"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text_app"
+        android:src="@drawable/icon_launcher_black_300px"/>
+
     <TextView
         android:id="@+id/text_app"
         android:layout_width="match_parent"
