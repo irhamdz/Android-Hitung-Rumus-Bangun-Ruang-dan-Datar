@@ -50,7 +50,7 @@ public class HitungBalokActivity extends AppCompatActivity {
 
         } catch (Exception e) {
             //jika salah satu kolom tidak diisi
-            Toast toast = Toast.makeText(this, "Masukan Semua Nomor Yang Akan Dihitung", Toast.LENGTH_SHORT);
+            Toast toast = Toast.makeText(this, ""+getString(R.string.masukan_nomor), Toast.LENGTH_SHORT);
             TextView t = (TextView) toast.getView().findViewById(android.R.id.message);
             if (t != null) t.setGravity(Gravity.CENTER);
             toast.show();
