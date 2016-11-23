@@ -15,10 +15,10 @@ public class Tabung extends Lingkaran {
     }
 
     public double hitung_volume() {
-        return Math.PI * Math.pow(jari_jari, 2) * tinggi;
+        return super.hitung_luas() * tinggi;
     }
 
     public double hitung_luas() {
-        return (2 * Math.PI * jari_jari * jari_jari) + Math.PI * (jari_jari * 2) * tinggi;
+        return (2 * super.hitung_luas()) + super.hitung_keliling() * tinggi;
     }
 }

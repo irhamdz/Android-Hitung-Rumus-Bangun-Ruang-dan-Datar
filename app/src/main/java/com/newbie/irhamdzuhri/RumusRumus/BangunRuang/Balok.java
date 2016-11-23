@@ -15,14 +15,14 @@ public class Balok extends PersegiPanjang {
     }
 
     public double hitung_luas() {
-        return (2 * (panjang * lebar + panjang * tinggi + lebar * tinggi));
+        return (2 * (super.hitung_luas() + super.panjang * tinggi + super.lebar * tinggi));
     }
 
     public double hitung_volume() {
-        return (panjang * lebar * tinggi);
+        return (super.hitung_luas() * tinggi);
     }
 
     public double hitung_keliling() {
-        return (4 * (panjang + lebar + tinggi));
+        return (4 * (super.panjang + super.lebar + tinggi));
     }
 }

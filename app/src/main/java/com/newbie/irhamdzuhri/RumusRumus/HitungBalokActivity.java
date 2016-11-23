@@ -40,7 +40,7 @@ public class HitungBalokActivity extends AppCompatActivity {
             lebar = Double.parseDouble(edtLebar.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             Balok balok = new Balok(panjang, lebar,tinggi);
-            txtHasil.setText(String.valueOf("Luas = " + balok.hitung_luas()));
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + balok.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -64,7 +64,7 @@ public class HitungBalokActivity extends AppCompatActivity {
             lebar = Double.parseDouble(edtLebar.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             Balok balok = new Balok(panjang, lebar,tinggi);
-            txtHasil.setText(String.valueOf("Keliling = " + balok.hitung_keliling()));
+            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + balok.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -88,7 +88,7 @@ public class HitungBalokActivity extends AppCompatActivity {
             lebar = Double.parseDouble(edtLebar.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             Balok balok = new Balok(panjang, lebar,tinggi);
-            txtHasil.setText(String.valueOf("Volume = " + balok.hitung_volume()));
+            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + balok.hitung_volume()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

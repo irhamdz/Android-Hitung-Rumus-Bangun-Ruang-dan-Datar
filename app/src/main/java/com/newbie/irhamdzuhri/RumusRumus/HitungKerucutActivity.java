@@ -42,7 +42,7 @@ public class HitungKerucutActivity extends AppCompatActivity {
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             garisLukis = Double.parseDouble(edtGarisLukis.getText().toString());
             LuasKerucut luasKerucut = new LuasKerucut(jari,tinggi,garisLukis);
-            txtHasil.setText(String.valueOf("Luas = " + luasKerucut.hitung_luas()));
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasKerucut.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -65,7 +65,7 @@ public class HitungKerucutActivity extends AppCompatActivity {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             VolumeKerucut volumeKerucut = new VolumeKerucut(jari,tinggi);
-            txtHasil.setText(String.valueOf("Volume = " + volumeKerucut.hitung_volume()));
+            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + volumeKerucut.hitung_volume()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

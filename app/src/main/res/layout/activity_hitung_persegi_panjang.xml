@@ -121,8 +121,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
             android:text="@string/hasil"
-            android:textSize="18sp"
+            android:lines="2"
             android:textStyle="bold" />
 
     </LinearLayout>

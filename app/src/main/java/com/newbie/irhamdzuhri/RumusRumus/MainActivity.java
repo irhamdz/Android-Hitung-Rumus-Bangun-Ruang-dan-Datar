@@ -61,4 +61,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, HitungKerucutActivity.class);
         startActivity(intent);
     }
+
+    public void pilihBangunRuang(View view) {
+        Intent intent = new Intent(MainActivity.this, PilihBangunRuangActivity.class);
+        startActivity(intent);
+    }
+
+    public void pilihBangunDatar(View view) {
+        Intent intent = new Intent(MainActivity.this, PilihBangunDatarActivity.class);
+        startActivity(intent);
+    }
 }

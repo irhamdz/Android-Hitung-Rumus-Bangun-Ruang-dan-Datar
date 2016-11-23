@@ -45,8 +45,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button2"
-                android:onClick="persegiPanjang"
-                android:text="@string/persegi_panjang"
+                android:onClick="pilihBangunRuang"
+                android:text="@string/bangun_ruang"
                 android:textColor="@android:color/white" />
 
 
@@ -56,67 +56,12 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button2"
-                android:onClick="balok"
-                android:text="@string/balok"
+                android:onClick="pilihBangunDatar"
+                android:text="@string/bangun_datar"
                 android:textColor="@android:color/white" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="lingkaran"
-                android:text="@string/lingkaran"
-                android:textColor="@android:color/white" />
-
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="Bola"
-                android:text="@string/bola"
-                android:textColor="@android:color/white" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="tabung"
-                android:text="@string/tabung"
-                android:textColor="@android:color/white" />
-
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="kerucut"
-                android:text="@string/luasKerucut"
-                android:textColor="@android:color/white" />
-
-        </LinearLayout>
 
         <Button
             android:id="@+id/polymorphism_button"
@@ -137,6 +82,6 @@
             android:background="@drawable/style_about_button"
             android:onClick="about"
             android:text="about"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 </ScrollView>

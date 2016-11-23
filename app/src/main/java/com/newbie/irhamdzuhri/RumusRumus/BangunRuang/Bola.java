@@ -13,7 +13,7 @@ public class Bola extends Lingkaran {
     }
 
     public double hitung_luas() {
-        return (4 * Math.PI * Math.pow(jari_jari, 2));
+        return (4 * super.hitung_luas());
     }
 
     public double hitung_volume() {

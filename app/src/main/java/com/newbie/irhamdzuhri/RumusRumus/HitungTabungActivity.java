@@ -39,7 +39,7 @@ public class HitungTabungActivity extends AppCompatActivity {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             Tabung tabung = new Tabung(jari,tinggi);
-            txtHasil.setText(String.valueOf("Luas = " + tabung.hitung_luas()));
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + tabung.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -62,7 +62,7 @@ public class HitungTabungActivity extends AppCompatActivity {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             tinggi = Double.parseDouble(edtTinggi.getText().toString());
             Tabung tabung = new Tabung(jari,tinggi);
-            txtHasil.setText(String.valueOf("Volume = " + tabung.hitung_volume()));
+            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + tabung.hitung_volume()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

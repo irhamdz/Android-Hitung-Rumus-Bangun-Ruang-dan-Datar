@@ -28,7 +28,9 @@
             android:name=".AboutActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".HitungTabungActivity" />
-        <activity android:name=".HitungKerucutActivity"></activity>
+        <activity android:name=".HitungKerucutActivity" />
+        <activity android:name=".PilihBangunRuangActivity" />
+        <activity android:name=".PilihBangunDatarActivity"></activity>
     </application>
 
 </manifest>

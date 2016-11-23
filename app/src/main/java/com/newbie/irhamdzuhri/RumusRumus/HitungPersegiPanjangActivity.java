@@ -39,7 +39,7 @@ public class HitungPersegiPanjangActivity extends AppCompatActivity {
             panjang = Double.parseDouble(edtPanjang.getText().toString());
             lebar = Double.parseDouble(edtLebar.getText().toString());
             PersegiPanjang persegiPanjang = new PersegiPanjang(panjang, lebar);
-            txtLuas.setText(String.valueOf("Luas = " + persegiPanjang.hitung_luas()));
+            txtLuas.setText(String.valueOf("Hasil :\nLuas = " + persegiPanjang.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -62,7 +62,7 @@ public class HitungPersegiPanjangActivity extends AppCompatActivity {
             panjang = Double.parseDouble(edtPanjang.getText().toString());
             lebar = Double.parseDouble(edtLebar.getText().toString());
             PersegiPanjang persegiPanjang = new PersegiPanjang(panjang, lebar);
-            txtLuas.setText(String.valueOf("Keliling = " + persegiPanjang.hitung_keliling()));
+            txtLuas.setText(String.valueOf("Hasil :\nKeliling = " + persegiPanjang.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

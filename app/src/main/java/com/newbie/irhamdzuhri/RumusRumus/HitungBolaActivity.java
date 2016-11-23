@@ -35,7 +35,7 @@ public class HitungBolaActivity extends AppCompatActivity {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Bola bola = new Bola(jari);
-            txtHasil.setText(String.valueOf("Luas = " + bola.hitung_luas()));
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + bola.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -57,7 +57,7 @@ public class HitungBolaActivity extends AppCompatActivity {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Bola bola = new Bola(jari);
-            txtHasil.setText(String.valueOf("Volume = " + bola.hitung_volume()));
+            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + bola.hitung_volume()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

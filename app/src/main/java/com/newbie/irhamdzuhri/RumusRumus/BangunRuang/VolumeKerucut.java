@@ -10,6 +10,6 @@ public class VolumeKerucut extends Tabung {
     }
 
     public double hitung_volume() {
-        return (1.0 / 3 * (Math.PI * Math.pow(jari_jari, 2)) * tinggi);
+        return (1.0 / 3 * super.hitung_volume());
     }
 }

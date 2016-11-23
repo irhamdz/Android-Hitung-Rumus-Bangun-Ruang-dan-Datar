@@ -35,7 +35,7 @@ public class HitungLingkaranActivity extends AppCompatActivity {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Lingkaran lingkaran = new Lingkaran(jari);
-            txtHasil.setText(String.valueOf("Luas = " + lingkaran.hitung_luas()));
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + lingkaran.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -57,7 +57,7 @@ public class HitungLingkaranActivity extends AppCompatActivity {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
             Lingkaran lingkaran = new Lingkaran(jari);
-            txtHasil.setText(String.valueOf("Keliling = " + lingkaran.hitung_keliling()));
+            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + lingkaran.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
