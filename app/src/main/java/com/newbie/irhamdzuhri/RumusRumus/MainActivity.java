@@ -42,11 +42,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void polymorphism(View view) {
-        Intent intent = new Intent(MainActivity.this, PolymorphismActivity.class);
-        startActivity(intent);
-    }
-
     public void about(View view) {
         Intent intent = new Intent(MainActivity.this, AboutActivity.class);
         startActivity(intent);

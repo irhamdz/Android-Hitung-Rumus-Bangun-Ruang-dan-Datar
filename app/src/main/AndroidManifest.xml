@@ -22,9 +22,6 @@
         <activity android:name=".HitungLingkaranActivity" />
         <activity android:name=".HitungBolaActivity" />
         <activity
-            android:name=".PolymorphismActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".AboutActivity"
             android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".HitungTabungActivity" />
