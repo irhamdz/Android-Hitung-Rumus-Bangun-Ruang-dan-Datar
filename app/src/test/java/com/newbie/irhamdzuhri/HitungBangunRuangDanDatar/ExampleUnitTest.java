@@ -1,4 +1,4 @@
-package com.newbie.irhamdzuhri.RumusRumus;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar;
 
 import org.junit.Test;
 

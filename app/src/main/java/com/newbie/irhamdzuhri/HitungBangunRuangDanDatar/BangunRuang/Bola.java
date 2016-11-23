@@ -1,6 +1,6 @@
-package com.newbie.irhamdzuhri.RumusRumus.BangunRuang;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang;
 
-import com.newbie.irhamdzuhri.RumusRumus.BangunDatar.Lingkaran;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Lingkaran;
 
 /**
  * Created by Irham Dzuhri on 21/11/2016.

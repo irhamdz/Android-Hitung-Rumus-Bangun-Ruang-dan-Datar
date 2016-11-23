@@ -11,7 +11,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.newbie.irhamdzuhri.RumusRumus.MainActivity">
+        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,16 +54,17 @@
                 android:id="@+id/rumus_luas"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/gambar"
-                android:text="(2 x Phi x r x r) + Phi x (r x 2) x t"
+                android:layout_alignParentEnd="true"
                 android:layout_below="@+id/luas"
                 android:layout_marginBottom="8dp"
-                android:layout_alignParentEnd="true" />
+                android:layout_toEndOf="@+id/gambar"
+                android:text="(2 x Phi x r x r) + Phi x (r x 2) x t" />
         </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="@string/jari_jari"
             android:textSize="15sp" />
 
@@ -125,8 +126,9 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:text="@string/hasil"
             android:lines="2"
+            android:text="@string/hasil"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.newbie.irhamdzuhri.RumusRumus;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.newbie.irhamdzuhri.RumusRumus.BangunRuang.Balok;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Balok;
 
 public class HitungBalokActivity extends AppCompatActivity {
 

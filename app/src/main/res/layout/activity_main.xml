@@ -11,7 +11,7 @@
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        tools:context="com.newbie.irhamdzuhri.RumusRumus.MainActivity">
+        tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <TextView
             android:layout_width="match_parent"
@@ -34,33 +34,38 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <LinearLayout
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimary" />
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="pilihBangunRuang"
-                android:text="@string/bangun_ruang"
-                android:textColor="@android:color/white" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_button2"
+            android:onClick="pilihBangunRuang"
+            android:text="@string/bangun_ruang"
+            android:textColor="@android:color/white" />
 
 
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button2"
-                android:onClick="pilihBangunDatar"
-                android:text="@string/bangun_datar"
-                android:textColor="@android:color/white" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="4dp"
+            android:background="@drawable/bg_button2"
+            android:onClick="pilihBangunDatar"
+            android:text="@string/bangun_datar"
+            android:textColor="@android:color/white" />
 
-        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary" />
 
         <Button
             android:id="@+id/about_button"
@@ -68,9 +73,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="20dp"
-            android:background="@drawable/style_about_button"
+            android:background="@drawable/bg_button"
             android:onClick="about"
             android:text="about"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@android:color/white" />
+
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/style_about_button"
+            android:layout_gravity="center_horizontal"
+            android:onClick="share"/>-->
     </LinearLayout>
 </ScrollView>

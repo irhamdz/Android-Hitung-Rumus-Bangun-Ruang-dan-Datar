@@ -1,4 +1,4 @@
-package com.newbie.irhamdzuhri.RumusRumus;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,42 +7,35 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Lingkaran;
 
-import com.newbie.irhamdzuhri.RumusRumus.BangunRuang.LuasKerucut;
-import com.newbie.irhamdzuhri.RumusRumus.BangunRuang.VolumeKerucut;
-
-public class HitungKerucutActivity extends AppCompatActivity {
-
-    EditText edtJariJari, edtTinggi,edtGarisLukis;
+public class HitungLingkaranActivity extends AppCompatActivity {
+    EditText edtJariJari;
     TextView txtHasil;
-    Double jari, tinggi,garisLukis;
+    Double jari;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitung_kerucut);
+        setContentView(R.layout.activity_hitung_lingkaran);
 
         initial();
 
     }
 
     private void initial() {
-        edtJariJari = (EditText) findViewById(R.id.edt_jari_kerucut);
-        edtTinggi = (EditText) findViewById(R.id.edt_tinggi_kerucut);
-        edtGarisLukis = (EditText) findViewById(R.id.edt_garis_lukis_kerucut);
-        txtHasil = (TextView) findViewById(R.id.txt_hasil_kerucut);
+        edtJariJari = (EditText) findViewById(R.id.edt_jari_lingkaran);
+        txtHasil = (TextView) findViewById(R.id.txt_hasil_lingkaran);
 
-        getSupportActionBar().setTitle("Kerucut");
+        getSupportActionBar().setTitle("Lingkaran");
     }
 
     public void hitung_luas(View view) {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
-            tinggi = Double.parseDouble(edtTinggi.getText().toString());
-            garisLukis = Double.parseDouble(edtGarisLukis.getText().toString());
-            LuasKerucut luasKerucut = new LuasKerucut(jari,tinggi,garisLukis);
-            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasKerucut.hitung_luas()));
+            Lingkaran lingkaran = new Lingkaran(jari);
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + lingkaran.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -60,12 +53,11 @@ public class HitungKerucutActivity extends AppCompatActivity {
         }
     }
 
-    public void hitung_volume(View view) {
+    public void hitung_keliling(View view) {
         try {
             jari = Double.parseDouble(edtJariJari.getText().toString());
-            tinggi = Double.parseDouble(edtTinggi.getText().toString());
-            VolumeKerucut volumeKerucut = new VolumeKerucut(jari,tinggi);
-            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + volumeKerucut.hitung_volume()));
+            Lingkaran lingkaran = new Lingkaran(jari);
+            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + lingkaran.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

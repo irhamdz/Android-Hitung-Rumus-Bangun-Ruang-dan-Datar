@@ -1,4 +1,4 @@
-package com.newbie.irhamdzuhri.RumusRumus;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,35 +7,39 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.newbie.irhamdzuhri.RumusRumus.BangunRuang.Bola;
 
-public class HitungBolaActivity extends AppCompatActivity {
-    EditText edtJariJari;
-    TextView txtHasil;
-    Double jari;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.PersegiPanjang;
+
+
+public class HitungPersegiPanjangActivity extends AppCompatActivity {
+    EditText edtPanjang, edtLebar;
+    TextView txtLuas;
+    Double panjang, lebar;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitung_bola);
+        setContentView(R.layout.activity_hitung_persegi_panjang);
 
         initial();
 
     }
 
     private void initial() {
-        edtJariJari = (EditText) findViewById(R.id.edt_jari_bola);
-        txtHasil = (TextView) findViewById(R.id.txt_hasil_bola);
+        edtPanjang = (EditText) findViewById(R.id.edt_panjang);
+        edtLebar = (EditText) findViewById(R.id.edt_lebar);
+        txtLuas = (TextView) findViewById(R.id.txt_luas);
 
-        getSupportActionBar().setTitle("Bola");
+        getSupportActionBar().setTitle("Persegi Panjang");
     }
 
     public void hitung_luas(View view) {
         try {
-            jari = Double.parseDouble(edtJariJari.getText().toString());
-            Bola bola = new Bola(jari);
-            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + bola.hitung_luas()));
+            panjang = Double.parseDouble(edtPanjang.getText().toString());
+            lebar = Double.parseDouble(edtLebar.getText().toString());
+            PersegiPanjang persegiPanjang = new PersegiPanjang(panjang, lebar);
+            txtLuas.setText(String.valueOf("Hasil :\nLuas = " + persegiPanjang.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -53,11 +57,12 @@ public class HitungBolaActivity extends AppCompatActivity {
         }
     }
 
-    public void hitung_volume(View view) {
+    public void hitung_keliling(View view) {
         try {
-            jari = Double.parseDouble(edtJariJari.getText().toString());
-            Bola bola = new Bola(jari);
-            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + bola.hitung_volume()));
+            panjang = Double.parseDouble(edtPanjang.getText().toString());
+            lebar = Double.parseDouble(edtLebar.getText().toString());
+            PersegiPanjang persegiPanjang = new PersegiPanjang(panjang, lebar);
+            txtLuas.setText(String.valueOf("Hasil :\nKeliling = " + persegiPanjang.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

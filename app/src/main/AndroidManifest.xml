@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.newbie.irhamdzuhri.RumusRumus">
+    package="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,17 +17,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HitungPersegiPanjangActivity" />
-        <activity android:name=".HitungBalokActivity" />
-        <activity android:name=".HitungLingkaranActivity" />
-        <activity android:name=".HitungBolaActivity" />
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungPersegiPanjangActivity" />
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungBalokActivity" />
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungLingkaranActivity" />
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungBolaActivity" />
         <activity
-            android:name=".AboutActivity"
+            android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.AboutActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".HitungTabungActivity" />
-        <activity android:name=".HitungKerucutActivity" />
-        <activity android:name=".PilihBangunRuangActivity" />
-        <activity android:name=".PilihBangunDatarActivity"></activity>
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungTabungActivity" />
+        <activity android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.HitungKerucutActivity" />
+        <activity
+            android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.PilihBangunRuangActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.PilihBangunDatarActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

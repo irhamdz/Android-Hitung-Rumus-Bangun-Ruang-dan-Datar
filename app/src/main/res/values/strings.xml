@@ -1,9 +1,7 @@
 <resources>
     //lain-lain
-    <string name="app_name">Rumus - Rumus</string>
+    <string name="app_name">Hitung Bangun Ruang dan Datar</string>
     <string name="text_gambar">Gambar</string>
-    <string name="title_activity_pilih_rumus_persegi_panjang">PilihRumusPersegiPanjangActivity
-    </string>
 
     //perhitungan
     <string name="hitung_luas">Hitung Luas</string>
@@ -38,4 +36,5 @@
     <string name="garis_lukis">Garis Lukis</string>
     <string name="bangun_ruang">Bangun Ruang</string>
     <string name="bangun_datar">Bangun Datar</string>
+    <string name="share">Share</string>
 </resources>

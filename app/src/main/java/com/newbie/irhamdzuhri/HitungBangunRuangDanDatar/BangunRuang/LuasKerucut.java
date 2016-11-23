@@ -1,4 +1,4 @@
-package com.newbie.irhamdzuhri.RumusRumus.BangunRuang;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang;
 
 /**
  * Created by Irham Dzuhri on 22/11/2016.
