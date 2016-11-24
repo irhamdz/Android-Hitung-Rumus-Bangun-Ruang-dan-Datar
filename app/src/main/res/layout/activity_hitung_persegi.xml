@@ -14,31 +14,31 @@
         tools:context="com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.MainActivity">
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/gambar"
                 android:layout_width="150dp"
-                android:layout_height="120dp"
+                android:layout_height="150dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/persegi_panjang" />
+                android:contentDescription="@string/text_gambar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/persegi" />
 
             <TableLayout
                 android:id="@+id/table"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="150dp"
                 android:layout_toEndOf="@+id/gambar"
                 android:background="@android:color/white"
-                android:padding="10dp">
+                android:padding="15dp">
 
                 <TextView
                     android:id="@+id/luas"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#fff"
                     android:text="@string/luas"
                     android:textStyle="bold" />
 
@@ -47,16 +47,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:layout_marginBottom="8dp"
-                    android:background="#fff"
-                    android:text="Panjang x Lebar" />
+                    android:text="sisi x sisi " />
 
                 <TextView
-                    android:id="@+id/keliling"
+                    android:id="@+id/volume"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#fff"
                     android:text="@string/keliling"
                     android:textStyle="bold" />
 
@@ -64,9 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:background="#fff"
-                    android:text="2 x (Panjang + Lebar)" />
-
+                    android:text="4 x sisi" />
             </TableLayout>
         </RelativeLayout>
 
@@ -74,28 +69,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/panjang"
+            android:text="@string/sisi"
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_panjang"
+            android:id="@+id/edt_sisi_persegi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/lebar"
-            android:textSize="15sp" />
-
-        <EditText
-            android:id="@+id/edt_lebar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/zero"
-            android:inputType="numberDecimal" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,6 +87,7 @@
 
             <Button
                 android:id="@+id/btn_hitung_luas"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -115,6 +99,7 @@
 
             <Button
                 android:id="@+id/btn_hitung_keliling"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
@@ -126,10 +111,11 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txt_luas"
+            android:id="@+id/txt_hasil_persegi"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_marginTop="8dp"
+            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:lines="2"
             android:text="@string/hasil"

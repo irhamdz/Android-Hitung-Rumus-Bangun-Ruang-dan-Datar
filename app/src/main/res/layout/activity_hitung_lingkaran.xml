@@ -22,43 +22,47 @@
                 android:layout_width="150dp"
                 android:layout_height="100dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
                 android:contentDescription="@string/text_gambar"
                 android:scaleType="centerCrop"
                 android:src="@drawable/lingkaran" />
 
-            <TextView
-                android:id="@+id/luas"
+            <TableLayout
+                android:id="@+id/table"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="100dp"
                 android:layout_toEndOf="@+id/gambar"
-                android:text="@string/luas"
-                android:textStyle="bold" />
+                android:background="@android:color/white"
+                android:padding="10dp">
 
-            <TextView
-                android:id="@+id/rumus_luas"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/luas"
-                android:layout_marginBottom="8dp"
-                android:layout_toEndOf="@+id/gambar"
-                android:text="Phi x (r x r)" />
+                <TextView
+                    android:id="@+id/luas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/luas"
+                    android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/volume"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rumus_luas"
-                android:layout_toEndOf="@+id/gambar"
-                android:text="@string/keliling"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/rumus_luas"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Phi x (r x r)" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/volume"
-                android:layout_toEndOf="@+id/gambar"
-                android:text="Phi x (2 x r)" />
+                <TextView
+                    android:id="@+id/volume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/keliling"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="Phi x (2 x r)" />
+            </TableLayout>
         </RelativeLayout>
 
         <TextView

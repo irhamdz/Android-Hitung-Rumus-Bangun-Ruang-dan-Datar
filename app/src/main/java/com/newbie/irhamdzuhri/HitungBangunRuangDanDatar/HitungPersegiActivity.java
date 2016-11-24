@@ -8,41 +8,37 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Kerucut.LuasKerucut;
-import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Kerucut.VolumeKerucut;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Lingkaran;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Persegi;
 
-public class HitungKerucutActivity extends AppCompatActivity {
+public class HitungPersegiActivity extends AppCompatActivity {
 
-    EditText edtJariJari, edtTinggi,edtGarisLukis;
+    EditText edtSisi;
     TextView txtHasil;
-    Double jari, tinggi,garisLukis;
+    Double sisi;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitung_kerucut);
+        setContentView(R.layout.activity_hitung_persegi);
 
         initial();
 
     }
 
     private void initial() {
-        edtJariJari = (EditText) findViewById(R.id.edt_jari_kerucut);
-        edtTinggi = (EditText) findViewById(R.id.edt_tinggi_kerucut);
-        edtGarisLukis = (EditText) findViewById(R.id.edt_garis_lukis_kerucut);
-        txtHasil = (TextView) findViewById(R.id.txt_hasil_kerucut);
+        edtSisi = (EditText) findViewById(R.id.edt_sisi_persegi);
+        txtHasil = (TextView) findViewById(R.id.txt_hasil_persegi);
 
-        getSupportActionBar().setTitle("Kerucut");
+        getSupportActionBar().setTitle("Persegi");
     }
 
     public void hitung_luas(View view) {
         try {
-            jari = Double.parseDouble(edtJariJari.getText().toString());
-            tinggi = Double.parseDouble(edtTinggi.getText().toString());
-            garisLukis = Double.parseDouble(edtGarisLukis.getText().toString());
-            LuasKerucut luasKerucut = new LuasKerucut(jari,tinggi,garisLukis);
-            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasKerucut.hitung_luas()));
+            sisi = Double.parseDouble(edtSisi.getText().toString());
+            Persegi persegi = new Persegi(sisi);
+            txtHasil.setText(String.valueOf("Hasil :\nLuas = " + persegi.hitung_luas()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -60,12 +56,11 @@ public class HitungKerucutActivity extends AppCompatActivity {
         }
     }
 
-    public void hitung_volume(View view) {
+    public void hitung_keliling(View view) {
         try {
-            jari = Double.parseDouble(edtJariJari.getText().toString());
-            tinggi = Double.parseDouble(edtTinggi.getText().toString());
-            VolumeKerucut volumeKerucut = new VolumeKerucut(jari,tinggi);
-            txtHasil.setText(String.valueOf("Hasil :\nVolume = " + volumeKerucut.hitung_volume()));
+            sisi = Double.parseDouble(edtSisi.getText().toString());
+            Persegi persegi = new Persegi(sisi);
+            txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + persegi.hitung_keliling()));
 
 
             //panjang = Double.parseDouble(edtPanjang.getText().toString());

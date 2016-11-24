@@ -40,4 +40,10 @@
     //other
     <string name="share">Share</string>
     <string name="masukan_nomor">Masukan Semua Nomor Yang Akan Dihitung</string>
+    <string name="persegi">Persegi</string>
+    <string name="sisi">Sisi</string>
+    <string name="hitung">Hitung</string>
+    <string name="sisiA">Sisi A</string>
+    <string name="sisiB">Sisi B</string>
+    <string name="sisiC">Sisi C</string>
 </resources>

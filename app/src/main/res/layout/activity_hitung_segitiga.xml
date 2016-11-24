@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tes_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -23,7 +24,7 @@
                 android:layout_width="150dp"
                 android:layout_height="120dp"
                 android:layout_marginBottom="8dp"
-                android:src="@drawable/persegi_panjang" />
+                android:src="@drawable/segitiga" />
 
             <TableLayout
                 android:id="@+id/table"
@@ -46,10 +47,10 @@
                     android:id="@+id/rumus_luas"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="1"
                     android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
                     android:background="#fff"
-                    android:text="Panjang x Lebar" />
+                    android:text="( alas x tinggi ) / 2" />
 
                 <TextView
                     android:id="@+id/keliling"
@@ -65,33 +66,69 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:background="#fff"
-                    android:text="2 x (Panjang + Lebar)" />
+                    android:text="sisi A + sisi B + sisi C" />
 
             </TableLayout>
         </RelativeLayout>
 
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_hitung_luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_luas" />
+
+            <RadioButton
+                android:id="@+id/radio_hitung_keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_keliling" />
+        </RadioGroup>
+
         <TextView
+            android:id="@+id/text_view_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/panjang"
+            android:text=""
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_panjang"
+            android:id="@+id/edt_text_view_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
 
         <TextView
+            android:id="@+id/text_view_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/lebar"
+            android:text=""
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_lebar"
+            android:id="@+id/edt_text_view_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/zero"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:id="@+id/text_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/edt_text_view_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
@@ -103,30 +140,20 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_hitung_luas"
+                android:id="@+id/btn_hitung"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button"
-                android:onClick="hitung_luas"
-                android:text="@string/hitung_luas"
+                android:onClick="hitung"
+                android:text="@string/hitung"
                 android:textColor="@android:color/white" />
 
-            <Button
-                android:id="@+id/btn_hitung_keliling"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button"
-                android:onClick="hitung_keliling"
-                android:text="@string/hitung_keliling"
-                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txt_luas"
+            android:id="@+id/txt_hasil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"

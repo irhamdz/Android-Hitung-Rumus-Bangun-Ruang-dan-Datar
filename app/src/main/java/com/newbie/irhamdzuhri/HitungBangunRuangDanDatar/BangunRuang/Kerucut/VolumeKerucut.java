@@ -1,4 +1,6 @@
-package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang;
+package com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Kerucut;
+
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Tabung;
 
 /**
  * Created by Irham Dzuhri on 22/11/2016.

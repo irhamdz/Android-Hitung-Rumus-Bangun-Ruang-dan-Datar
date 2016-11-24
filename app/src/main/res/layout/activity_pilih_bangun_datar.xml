@@ -66,4 +66,32 @@
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:onClick="persegi"
+            android:text="@string/persegi"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:onClick="segitiga"
+            android:text="@string/segitiga"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
 </LinearLayout>
