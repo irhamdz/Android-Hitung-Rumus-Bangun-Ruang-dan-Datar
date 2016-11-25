@@ -49,8 +49,8 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/bg_button2"
-            android:onClick="persegiPanjang"
-            android:text="@string/persegi_panjang"
+            android:onClick="segitiga"
+            android:text="@string/segitiga"
             android:textColor="@android:color/white" />
 
 
@@ -63,9 +63,8 @@
             android:onClick="lingkaran"
             android:text="@string/lingkaran"
             android:textColor="@android:color/white" />
-
-
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -81,6 +80,21 @@
             android:text="@string/persegi"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:onClick="persegiPanjang"
+            android:text="@string/persegi_panjang"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:layout_width="0dp"
@@ -88,10 +102,45 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/bg_button2"
-            android:onClick="segitiga"
-            android:text="@string/segitiga"
+            android:onClick="trapesium"
+            android:text="@string/trapesium"
             android:textColor="@android:color/white" />
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:onClick="layangLayang"
+            android:text="@string/layang_layang"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:onClick="belahKetupat"
+            android:text="@string/belah_ketupat"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_hide"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button2"
+            android:text="hidden"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 </LinearLayout>

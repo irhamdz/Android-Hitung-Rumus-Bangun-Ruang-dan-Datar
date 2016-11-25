@@ -4,13 +4,19 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class PilihBangunDatarActivity extends AppCompatActivity {
+    Button hideButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pilih_bangun_datar);
+
+        hideButton = (Button) findViewById(R.id.btn_hide);
+
+        hideButton.setVisibility(View.INVISIBLE);
     }
 
     public void persegiPanjang(View view) {
@@ -30,6 +36,21 @@ public class PilihBangunDatarActivity extends AppCompatActivity {
 
     public void segitiga(View view) {
         Intent intent = new Intent(PilihBangunDatarActivity.this, HitungSegitigaActivity.class);
+        startActivity(intent);
+    }
+
+    public void trapesium(View view) {
+        Intent intent = new Intent(PilihBangunDatarActivity.this, HitungTrapesiumActivity.class);
+        startActivity(intent);
+    }
+
+    public void layangLayang(View view) {
+        Intent intent = new Intent(PilihBangunDatarActivity.this, HitungLayangLayangActivity.class);
+        startActivity(intent);
+    }
+
+    public void belahKetupat(View view) {
+        Intent intent = new Intent(PilihBangunDatarActivity.this, HitungBelahKetupatActivity.class);
         startActivity(intent);
     }
 }

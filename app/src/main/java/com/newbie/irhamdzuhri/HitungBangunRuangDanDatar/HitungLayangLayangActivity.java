@@ -10,22 +10,22 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Segitiga.KelilingSegitiga;
-import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.Segitiga.LuasSegitiga;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.LayangLayang.KelilingLayangLayang;
+import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunDatar.LayangLayang.LuasLayangLayang;
 import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Kerucut.LuasKerucut;
 import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Kerucut.VolumeKerucut;
 
-public class HitungKerucutActivity extends AppCompatActivity {
+public class HitungLayangLayangActivity extends AppCompatActivity {
 
     EditText edtText1, edtText2;
     TextView txtHasil, txtView1, txtView2;
     Button btnHitung;
-    Double jariJari, tinggi, garisLukis;
+    Double d1, d2, s1, s2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_hitung_kerucut);
+        setContentView(R.layout.activity_hitung_layang_layang);
 
         initial();
     }
@@ -45,7 +45,7 @@ public class HitungKerucutActivity extends AppCompatActivity {
         btnHitung.setVisibility(View.INVISIBLE);
         txtHasil.setVisibility(View.INVISIBLE);
 
-        getSupportActionBar().setTitle("Kerucut");
+        getSupportActionBar().setTitle("Layang Layang");
     }
 
     public void onRadioButtonClicked(View view) {
@@ -56,8 +56,8 @@ public class HitungKerucutActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.radio_hitung_luas:
                 if (checked) {
-                    txtView1.setText(getString(R.string.jari_jari));
-                    txtView2.setText(getString(R.string.garis_lukis)+" (s)");
+                    txtView1.setText(getString(R.string.diagonal_horizontal) + " (d1)");
+                    txtView2.setText(getString(R.string.diagonal_vertical) + " (d2)");
                     edtText1.setText("");
                     edtText2.setText("");
                     btnHitung.setText(getString(R.string.hitung_luas));
@@ -73,13 +73,13 @@ public class HitungKerucutActivity extends AppCompatActivity {
                     txtHasil.setText(getString(R.string.hasil));
                     break;
                 }
-            case R.id.radio_hitung_volume:
+            case R.id.radio_hitung_keliling:
                 if (checked) {
-                    txtView1.setText(getString(R.string.jari_jari));
-                    txtView2.setText(getString(R.string.tinggi));
+                    txtView1.setText(getString(R.string.sisi_satu) + " (s1)");
+                    txtView2.setText(getString(R.string.sisi_dua) + " (s2)");
                     edtText1.setText("");
                     edtText2.setText("");
-                    btnHitung.setText(getString(R.string.hitung_volume));
+                    btnHitung.setText(getString(R.string.hitung_keliling));
 
                     edtText1.setVisibility(View.VISIBLE);
                     edtText2.setVisibility(View.VISIBLE);
@@ -101,10 +101,10 @@ public class HitungKerucutActivity extends AppCompatActivity {
         String buttonText = btnHitung.getText().toString();
         if (buttonText == getString(R.string.hitung_luas)) {
             try {
-                jariJari = Double.parseDouble(edtText1.getText().toString());
-                garisLukis = Double.parseDouble(edtText2.getText().toString());
-                LuasKerucut luasKerucut = new LuasKerucut(jariJari,garisLukis);
-                txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasKerucut.hitung_luas()));
+                d1 = Double.parseDouble(edtText1.getText().toString());
+                d2 = Double.parseDouble(edtText2.getText().toString());
+                LuasLayangLayang luasLayangLayang = new LuasLayangLayang(d1, d2);
+                txtHasil.setText(String.valueOf("Hasil :\nLuas = " + luasLayangLayang.hitung_luas()));
 
 
                 //panjang = Double.parseDouble(edtPanjang.getText().toString());
@@ -122,10 +122,10 @@ public class HitungKerucutActivity extends AppCompatActivity {
             }
         } else {
             try {
-                jariJari = Double.parseDouble(edtText1.getText().toString());
-                tinggi = Double.parseDouble(edtText2.getText().toString());
-                VolumeKerucut volumeKerucut = new VolumeKerucut(jariJari,tinggi);
-                txtHasil.setText(String.valueOf("Hasil :\nVolume = " + volumeKerucut.hitung_volume()));
+                s1 = Double.parseDouble(edtText1.getText().toString());
+                s2 = Double.parseDouble(edtText2.getText().toString());
+               KelilingLayangLayang kelilingLayangLayang = new KelilingLayangLayang(s1,s2);
+                txtHasil.setText(String.valueOf("Hasil :\nKeliling = " + kelilingLayangLayang.hitung_keliling()));
 
 
                 //panjang = Double.parseDouble(edtPanjang.getText().toString());

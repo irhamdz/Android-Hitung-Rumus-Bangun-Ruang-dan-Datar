@@ -46,4 +46,15 @@
     <string name="sisiA">Sisi A</string>
     <string name="sisiB">Sisi B</string>
     <string name="sisiC">Sisi C</string>
+    <string name="trapesium">Trapesium</string>
+    <string name="layang_layang">Layang Layang</string>
+    <string name="sisiAB">Sisi AB</string>
+    <string name="sisiCD">Sisi CD</string>
+    <string name="sisiBC">Sisi BC</string>
+    <string name="sisiDA">Sisi DA</string>
+    <string name="diagonal_horizontal">Diagonal Horizontal</string>
+    <string name="diagonal_vertical">Diagonal Vertikal</string>
+    <string name="sisi_satu">Sisi 1</string>
+    <string name="sisi_dua">Sisi 2</string>
+    <string name="belah_ketupat">Belah Ketupat</string>
 </resources>

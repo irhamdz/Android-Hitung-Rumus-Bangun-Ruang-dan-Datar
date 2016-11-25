@@ -33,7 +33,10 @@
             android:name=".PilihBangunDatarActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".HitungPersegiActivity" />
-        <activity android:name=".HitungSegitigaActivity"></activity>
+        <activity android:name=".HitungSegitigaActivity" />
+        <activity android:name=".HitungTrapesiumActivity" />
+        <activity android:name=".HitungLayangLayangActivity" />
+        <activity android:name=".HitungBelahKetupatActivity"></activity>
     </application>
 
 </manifest>

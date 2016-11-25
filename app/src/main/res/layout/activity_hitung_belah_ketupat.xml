@@ -15,21 +15,21 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:layout_height="wrap_content">
             <TableLayout
                 android:id="@+id/table_gambar"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:paddingTop="4dp"
-                android:background="@android:color/white">
+                android:background="@android:color/white"
+                android:paddingLeft="4dp">
 
             <ImageView
                 android:id="@+id/gambar"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_width="130dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
                 android:contentDescription="@string/text_gambar"
-                android:src="@drawable/tabung" />
+                android:src="@drawable/belah_ketupat" />
             </TableLayout>
 
             <TableLayout
@@ -38,7 +38,7 @@
                 android:layout_height="150dp"
                 android:layout_toEndOf="@+id/table_gambar"
                 android:background="@android:color/white"
-                android:padding="15dp">
+                android:padding="10dp">
 
                 <TextView
                     android:id="@+id/luas"
@@ -52,58 +52,75 @@
                     android:id="@+id/rumus_luas"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_below="@+id/luas"
                     android:layout_marginBottom="8dp"
-                    android:layout_toEndOf="@+id/gambar"
-                    android:layout_weight="1"
-                    android:text="(2 x Phi x r x r) + Phi x (r x 2) x t" />
+                    android:layout_weight="2"
+                    android:text="(diagonal 1 x diagonal 2) / 2" />
 
                 <TextView
-                    android:id="@+id/volume"
+                    android:id="@+id/keliling"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/volume"
+                    android:text="@string/keliling"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Phi x ( r x r ) x t" />
-
+                    android:text="4 x Sisi" />
 
             </TableLayout>
         </RelativeLayout>
 
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_hitung_luas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_luas" />
+
+            <RadioButton
+                android:id="@+id/radio_hitung_keliling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="@string/hitung_keliling" />
+        </RadioGroup>
+
         <TextView
+            android:id="@+id/text_view_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/jari_jari"
+            android:text=""
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_jari_tabung"
+            android:id="@+id/edt_text_view_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
 
         <TextView
+            android:id="@+id/text_view_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/tinggi"
+            android:text=""
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_tinggi_tabung"
+            android:id="@+id/edt_text_view_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -111,36 +128,23 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_hitung_luas_bola"
-                style="?android:buttonBarButtonStyle"
+                android:id="@+id/btn_hitung"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_button"
-                android:onClick="hitung_luas"
-                android:text="@string/hitung_luas"
+                android:onClick="hitung"
+                android:text="@string/hitung"
                 android:textColor="@android:color/white" />
 
-            <Button
-                android:id="@+id/btn_hitung_volume_bola"
-                style="?android:buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="4dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button"
-                android:onClick="hitung_volume"
-                android:text="@string/hitung_volume"
-                android:textColor="@android:color/white" />
         </LinearLayout>
 
         <TextView
-            android:id="@+id/txt_hasil_tabung"
+            android:id="@+id/txt_hasil"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:layout_weight="1"
             android:gravity="center_horizontal"
             android:lines="2"
             android:text="@string/hasil"

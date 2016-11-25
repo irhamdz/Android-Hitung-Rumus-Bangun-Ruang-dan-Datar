@@ -6,13 +6,13 @@ import com.newbie.irhamdzuhri.HitungBangunRuangDanDatar.BangunRuang.Tabung;
  * Created by Irham Dzuhri on 22/11/2016.
  */
 
-public class LuasKerucut extends Tabung {
-
+public class LuasKerucut{
+    double jari_jari;
     double garis_lukis;
 
-    public LuasKerucut(double r, double t, double s) {
-        super(r, t);
-        this.garis_lukis = s;
+    public LuasKerucut(double r,double s) {
+        jari_jari = r;
+        garis_lukis = s;
     }
 
     public double hitung_luas() {

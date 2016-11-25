@@ -49,10 +49,9 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/bg_button2"
-            android:onClick="tabung"
-            android:text="@string/tabung"
+            android:onClick="kerucut"
+            android:text="@string/luasKerucut"
             android:textColor="@android:color/white" />
-
 
         <Button
             android:layout_width="0dp"
@@ -60,8 +59,8 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/bg_button2"
-            android:onClick="kerucut"
-            android:text="@string/luasKerucut"
+            android:onClick="tabung"
+            android:text="@string/tabung"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
