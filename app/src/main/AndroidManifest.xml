@@ -36,7 +36,8 @@
         <activity android:name=".HitungSegitigaActivity" />
         <activity android:name=".HitungTrapesiumActivity" />
         <activity android:name=".HitungLayangLayangActivity" />
-        <activity android:name=".HitungBelahKetupatActivity"></activity>
+        <activity android:name=".HitungBelahKetupatActivity" />
+        <activity android:name=".HitungKubusActivity"></activity>
     </application>
 
 </manifest>

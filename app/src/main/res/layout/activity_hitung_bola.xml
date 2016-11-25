@@ -19,52 +19,58 @@
 
             <ImageView
                 android:id="@+id/gambar"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
                 android:layout_marginBottom="8dp"
-                android:layout_marginEnd="8dp"
+                android:scaleType="centerCrop"
                 android:contentDescription="@string/text_gambar"
                 android:src="@drawable/bola" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_toEndOf="@+id/gambar"
+                android:background="@android:color/white"
+                android:padding="10dp">
 
             <TextView
                 android:id="@+id/luas"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/gambar"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="@string/luas"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/rumus_luas"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@+id/luas"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:layout_marginBottom="8dp"
-                android:layout_toEndOf="@+id/gambar"
                 android:text="4 x Phi x ( r x r )" />
 
             <TextView
                 android:id="@+id/volume"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/rumus_luas"
-                android:layout_toEndOf="@+id/gambar"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="@string/volume"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/volume"
-                android:layout_toEndOf="@+id/gambar"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:text="4/3 x Phi x ( r x r x r )" />
+            </TableLayout>
         </RelativeLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/jari_jari"
             android:layout_marginTop="8dp"
+            android:text="@string/jari_jari"
             android:textSize="15sp" />
 
         <EditText

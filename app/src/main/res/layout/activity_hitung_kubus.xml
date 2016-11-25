@@ -29,7 +29,7 @@
                     android:layout_width="150dp"
                     android:layout_height="140dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/balok" />
+                    android:src="@drawable/kubus" />
             </TableLayout>
 
             <TableLayout
@@ -41,11 +41,11 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/luas"
+                    android:id="@+id/luas_permukaan"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="@string/luas"
+                    android:text="@string/luas_permukaan"
                     android:textStyle="bold" />
 
                 <TextView
@@ -54,7 +54,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:text="2 x ( p x l + p x t + l x t )" />
+                    android:text="6 x ( rusuk x rusuk )" />
 
                 <TextView
                     android:id="@+id/keliling"
@@ -70,7 +70,7 @@
                     android:layout_height="0dp"
                     android:layout_marginBottom="8dp"
                     android:layout_weight="1"
-                    android:text="4 x (P + l + t)" />
+                    android:text="12 x rusuk" />
 
                 <TextView
                     android:id="@+id/volume"
@@ -84,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
-                    android:text="Panjang x Lebar x Tinggi" />
+                    android:text="rusuk x rusuk x rusuk" />
             </TableLayout>
         </RelativeLayout>
 
@@ -92,41 +92,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/panjang"
+            android:text="@string/rusuk"
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/edt_panjang"
+            android:id="@+id/edt_rusuk"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/zero"
             android:inputType="numberDecimal" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/lebar"
-            android:textSize="15sp" />
 
-        <EditText
-            android:id="@+id/edt_lebar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/zero"
-            android:inputType="numberDecimal" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/tinggi"
-            android:textSize="15sp" />
-
-        <EditText
-            android:id="@+id/edt_tinggi"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/zero"
-            android:inputType="numberDecimal" />
 
         <LinearLayout
             android:layout_width="match_parent"
