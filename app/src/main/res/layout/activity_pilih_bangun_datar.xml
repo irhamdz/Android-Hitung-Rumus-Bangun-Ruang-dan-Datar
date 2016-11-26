@@ -133,14 +133,23 @@
             android:textColor="@android:color/white" />
 
         <Button
-            android:id="@+id/btn_hide"
             android:layout_width="0dp"
             android:layout_height="100dp"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="@drawable/bg_button2"
-            android:text="hidden"
+            android:onClick="jajarGenjang"
+            android:text="@string/jajar_genjang"
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+    <!--<Button
+        android:id="@+id/btn_hide"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_margin="4dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_button2"
+        android:text="hidden"
+        android:textColor="@android:color/white" />-->
 </LinearLayout>

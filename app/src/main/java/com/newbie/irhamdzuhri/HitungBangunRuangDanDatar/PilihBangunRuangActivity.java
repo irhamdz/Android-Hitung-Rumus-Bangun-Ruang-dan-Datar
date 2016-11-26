@@ -43,4 +43,9 @@ public class PilihBangunRuangActivity extends AppCompatActivity {
         Intent intent = new Intent(PilihBangunRuangActivity.this, HitungKubusActivity.class);
         startActivity(intent);
     }
+
+    public void limasSegiEmpat(View view) {
+        Intent intent = new Intent(PilihBangunRuangActivity.this, HitungLimasSegiEmpatActivity.class);
+        startActivity(intent);
+    }
 }

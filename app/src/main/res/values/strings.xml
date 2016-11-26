@@ -59,5 +59,13 @@
     //other
     <string name="share">Share</string>
     <string name="masukan_nomor">Masukan Semua Nomor Yang Akan Dihitung</string>
+    <string name="jajar_genjang">Jajar Genjang</string>
+    <string name="hitung_luas_alas">Hitung Luas Alas</string>
+    <string name="hitung_luas_sisi_tegak">Hitung Luas Sisi Tegak</string>
+    <string name="luas_alas">Luas Alas :</string>
+    <string name="luas_sisi_tegak">Luas Sisi Tegak :</string>
+    <string name="luas_limas">Luas Limas :</string>
+    <string name="limas_segi_empat">Limas Segi Empat</string>
+    <string name="hitung_luas_limas">Hitung Luas Limas</string>
 
 </resources>
